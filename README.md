@@ -42,6 +42,13 @@ Developed by:R.R.Madhumitha
 RegisterNumber: 24900556
 */
 ```
+    import numpy as np
+    from scipy.linalg import lu_factor,lu_solve
+    A=np.array(eval(input()))
+    B=np.array(eval(input()))
+    lu,piv=lu_factor(A)
+    X=lu_solve((lu,piv),B)
+    print(X)
 
 ## Output:
 ![i](<Screenshot 2024-12-06 053123.png>)
